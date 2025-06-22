@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* daschboard style for menu and cards  */
+.dachboardb {
+    box-shadow: 2px 2px red;
+   & .dachboardb__nav {
+
+       & .dachboardb__links {
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+
+        & a {
+            background-color: rosybrown;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+       }
+    }
+
+}
+
+
+.countries-list {
+    max-height: 600px; 
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+
+.contry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+
+.createTitle {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.createTitle h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+/* Formulierstijl */
+.simpelform {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.simpelform__flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.simpelform__flex label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.simpelform__flex input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.2s ease;
+}
+
+.simpelform__flex input:focus {
+    border-color: #4f46e5;
+    outline: none;
+}
+
+.simpelform__flex div {
+    color: #e11d48; 
+    margin-top: 6px;
+    font-size: 0.875rem;
+}
+
+/* Submit-knop */
+.simpelform button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.simpelform button[type="submit"]:hover {
+    background-color: #4338ca;
+}
+
